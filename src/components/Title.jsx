@@ -7,7 +7,7 @@ class Bio extends Component {
       <section className='header'>
         <h1>
           <Link to='/' className='hvr-float-shadow'>
-            Trevor Casey
+            TREVOR CASEY
           </Link>
         </h1>
         <br />

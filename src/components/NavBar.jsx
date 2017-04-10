@@ -1,38 +1,27 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
+import Logo from './Logo'
+import Menu from './Menu'
 
 class Navbar extends Component {
   render () {
     return (
       <nav className='nav-container'>
+        <Menu />
         <NavLink
           to='/'
           className='nav-link'
-          // activeClassName='nav-selected'
-          >
-            home
+        >
+          <Logo />
         </NavLink>
-        <NavLink
-          to='/bio'
-          className='nav-link'
-          activeClassName='nav-selected'
-          >
-            bio
-        </NavLink>
-        <NavLink
+        {/* <NavLink
           to='/skills'
           className='nav-link'
           activeClassName='nav-selected'
-          >
-            skills
-        </NavLink>
-        <NavLink
-          to='/portfolio'
-          className='nav-link'
-          activeClassName='nav-selected'
-          >
-            portfolio
-        </NavLink>
+        >
+          skills
+        </NavLink> */}
+        <span />
       </nav>
     )
   }

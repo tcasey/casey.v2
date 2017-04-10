@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home'
-import Bio from './components/Bio'
 import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
 
@@ -13,7 +12,6 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/bio' component={Bio} />
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/skills' component={Skills} />
           {/* <Route component={NotFound} /> */}

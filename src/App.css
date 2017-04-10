@@ -15,8 +15,13 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+.nav-container
+.logo:hover
+.tc-logo {
+  fill: #d3d3d3;
+}
 .nav-link {
-  color: white;
+  color: #ffffff;
 }
 .nav-selected,
 .nav-link:hover {
@@ -59,48 +64,126 @@ a {
   color: #888888;
 }
 
-  /*-----------------------------------
-              Float Shadow
-  ------------------------------------- */
-  .hvr-float-shadow {
-      display: inline-block;
-      vertical-align: middle;
-      transform: translateZ(0);
-      box-shadow: 0 0 1px transparent;
-      backface-visibility: hidden;
-      -moz-osx-font-smoothing: grayscale;
-      position: relative;
-      transition-duration: 0.3s;
-      transition-property: transform;
+  /*----------------------------------
+          hamburger menu
+  ------------------------------------*/
+  .menu-wrapper .icon-wrap {
+      display: flex;
+      cursor: pointer;
+      justify-content: flex-end;
   }
 
-  .hvr-float-shadow::before {
-      pointer-events: none;
+  .menu-wrapper path {
+      stroke: #ffffff;
+      stroke-width: 40;
+      stroke-linecap: round;
+  }
+
+  .menu-wrapper path.x {
+    stroke-miterlimit: 10;
+      stroke-dashoffset: -1490;
+      stroke-dasharray: 840 2000;
+  }
+
+  .menu-wrapper path.yy {
+      stroke-dashoffset: 1700;
+      stroke-dasharray: 2520 3000;
+      transition: 0.3s 0.2s ease-in-out;
+  }
+
+  .menu-wrapper .toClose path.yy {
+    stroke-dashoffset: -1200;
+    transition: 0.5s 0s ease-in-out;
+  }
+
+  .menu-wrapper path.x2 {
+    transform-origin: right center;
+    transition: 0.5s 0s ease-in-out;
+    transform: rotate(0deg) translateX(0px);
+  }
+
+  .menu-wrapper .toClose path.x2:first-of-type {
+    transform: rotate(-45deg) translate(-80px, -80px);
+  }
+
+  .menu-wrapper .toClose path.x2 {
+    transition: 0.3s 0.2s ease-in-out;
+    transform: rotate(45deg) translate(-80px, 80px);
+  }
+
+  .menu-wrapper circle {
+    fill: transparent;
+    transition: 0.5s ease-in-out;
+  }
+
+  .menu-wrapper .toClose circle {
+    fill: #333333;
+    transition: 1s ease-in-out;
+  }
+
+  .menu-wrapper .toClose svg path.x {
+    animation: toCloseX 0.4s ease-in-out forwards;
+  }
+
+  .menu-wrapper .toOpen svg path.x {
+    animation: toOpenX 0.4s ease-in-out forwards;
+  }
+  @keyframes toCloseX {
+      0% {
+          stroke-dashoffset: -1490;
+      }
+
+      100% {
+          stroke-dashoffset: 0;
+      }
+  }
+  @keyframes toOpenX {
+      0% {
+          stroke-dashoffset: 0;
+      }
+
+      100% {
+          stroke-dashoffset: -1490;
+      }
+  }
+  @media (min-width: 600px) {
+      .menu-wrapper {
+          /*display: none;*/
+      }
+  }
+  .menu-wrapper .menu-nav-hide {
+    display: none;
+  }
+
+  .menu-wrapper .menu-nav {
+      list-style: none;
+      text-align: center;
+      z-index: 30;
+      overflow: hidden;
       position: absolute;
-      z-index: -1;
-      content: '';
-      top: 100%;
-      left: 15%;
-      height: 10px;
-      width: 70%;
-      opacity: 0;
-      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.13) 0%, transparent 80%);
-      transition-duration: 0.3s;
-      transition-property: transform, opacity;
+      transition: 0.5s 0s ease-in-out;
   }
 
-  .hvr-float-shadow.hover_effect,
-  .hvr-float-shadow:active,
-  .hvr-float-shadow:focus,
-  .hvr-float-shadow:hover {
-      transform: translateY(-4px);
-      /* move the element up by 5px */
+  .menu-wrapper .menu-nav li {
+    width: 7em;
+    z-index: 100;
+    height: 2.5em;
+      font-size: 1em;
+      overflow: hidden;
+      background: #4F4F4F;
+      border-left: 1px solid #ffffff;
   }
 
-  .hvr-float-shadow:active:before,
-  .hvr-float-shadow:focus:before,
-  .hvr-float-shadow:hover:before {
-      opacity: 1;
-      transform: translateY(4px);
-      /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  .menu-home {
+      border-top: 1px solid #ffffff;
+  }
+
+  .menu-wrapper .menu-nav li:nth-last-child(1) {
+      border-bottom: 1px solid #ffffff;
+  }
+
+  .menu-wrapper .menu-nav li:hover {
+    color: #ffffff;
+    overflow: hidden;
+    background: #66bbff;
   }

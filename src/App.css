@@ -9,25 +9,25 @@ a {
   text-decoration: none;
 }
 .nav-container {
-  height: 44px;
+  height: 40px;
   background-color: #333333;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav-container
 .logo:hover
 .tc-logo {
-  fill: #d3d3d3;
+  fill: #999999;
 }
 .nav-link {
   color: #ffffff;
 }
-.nav-selected,
-.nav-link:hover {
-  color: #888888;
+.nav-selected {
+  color: #999999;
 }
 .paper {
+  height: 80vh;
   max-width: 100%;
   background-color: #fafafa;
   padding-bottom: 5px;
@@ -158,6 +158,8 @@ a {
   .menu-wrapper .menu-nav {
       list-style: none;
       text-align: center;
+      margin: 0;
+      padding: 0;
       z-index: 30;
       overflow: hidden;
       position: absolute;
@@ -167,11 +169,14 @@ a {
   .menu-wrapper .menu-nav li {
     width: 7em;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 2.5em;
-      font-size: 1em;
-      overflow: hidden;
-      background: #4F4F4F;
-      border-left: 1px solid #ffffff;
+    font-size: 1em;
+    overflow: hidden;
+    background: #4F4F4F;
+    border-left: 1px solid #ffffff;
   }
 
   .menu-home {
@@ -182,8 +187,23 @@ a {
       border-bottom: 1px solid #ffffff;
   }
 
+  .menu-wrapper:hover {
+    cursor: pointer;
+  }
+
   .menu-wrapper .menu-nav li:hover {
     color: #ffffff;
     overflow: hidden;
     background: #66bbff;
   }
+.footer-social a {
+  color: #fff;
+}
+
+.footer-social svg {
+  fill: #fafafa;
+}
+
+.footer-social svg:hover {
+  fill: #999999;
+}

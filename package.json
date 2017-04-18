@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "d3": "^4.7.4",
+    "glamor": "^2.20.24",
+    "glamorous": "^3.5.0",
     "react": "^15.5.2",
     "react-dom": "^15.5.2",
     "react-router": "^4.0.0",

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 import Title from './Title'
+import Social from './Social'
 import logo from '../logo.svg'
 
 class Home extends Component {
@@ -22,7 +23,7 @@ class Home extends Component {
                 I'm a creative developer with an obession for clean code and an eye for design
               </p>
               <p>
-                I'm currently working as a Full Stack JavaScript Developer at
+                Currently I'm working as a Full Stack JavaScript Developer at
                 <a className='employer' target='blank' href='https://www.vivintsolar.com'> Vivint.solar</a>.
               </p>
               <p className='paragraph-link'>Check out my
@@ -31,6 +32,7 @@ class Home extends Component {
             </div>
           </div>
         </section>
+        <Social />
       </div>
     )
   }

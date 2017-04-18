@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
+import { Span } from 'glamorous'
+
 import Logo from './Logo'
 import Menu from './Menu'
 
@@ -14,14 +16,9 @@ class Navbar extends Component {
         >
           <Logo />
         </NavLink>
-        {/* <NavLink
-          to='/skills'
-          className='nav-link'
-          activeClassName='nav-selected'
-        >
-          skills
-        </NavLink> */}
-        <span />
+        <Span
+          width={70}
+        />
       </nav>
     )
   }

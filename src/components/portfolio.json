@@ -1,0 +1,66 @@
+{
+  "pre_course": {
+    "id": 0,
+    "val": "pre_course",
+    "desc": "This was my attempt at making a better testing platform for bootcamp students 💻",
+    "tech": ["JavaScript", "AngularJS", "Web Workers", "Node", "MongoDB"],
+    "img": [],
+    "logo": "pre_course.svg"
+  },
+  "memory": {
+    "id": 1,
+    "val": "memory",
+    "desc": "A fun little memory game",
+    "tech": ["JavaScript", "SVG"],
+    "img": [],
+    "logo": "memory.svg"
+  },
+  "material": {
+    "id": 2,
+    "val": "material",
+    "desc": "A simple todo list (my first react app 🎉)",
+    "tech": ["JavaScript", "React"],
+    "img": [],
+    "logo": "material.svg"
+  },
+  "h+c": {
+    "id": 3,
+    "val": "h+c",
+    "desc": "My first app (and most popular if you ask my nephews)",
+    "tech": ["JavaScript", "jQuery"],
+    "img": [],
+    "logo": "cold.svg"
+  },
+  "dots": {
+    "id": 4,
+    "val": "dots",
+    "desc": "Just more fun with JavaScript",
+    "tech": ["JavaScript"],
+    "img": [],
+    "logo": "dots.svg"
+  },
+  "office": {
+    "id": 5,
+    "val": "office",
+    "desc": "Personal Favorite. A personality quiz based off of my favorite TV show 📄",
+    "tech": ["JavaScript", "React"],
+    "img": [],
+    "logo": "office.svg"
+  },
+  "ncaa" : {
+    "id": 6,
+    "val": "ncaa",
+    "desc": "A fun quiz for proving your NCAA Football knowledge 🏈",
+    "tech": ["JavaScript"],
+    "img": [],
+    "logo": "ncaa.svg"
+  },
+  "bike": {
+    "id": 7,
+    "val": "bike",
+    "desc": "Got tired of giving people Christmas ideas so I made this instead",
+    "tech": ["JavaScript", "Etsy API"],
+    "img": [],
+    "logo": "bike.svg"
+  }
+}

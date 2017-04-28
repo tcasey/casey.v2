@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "val": "pre_course",
+    "title": "pre_course.svg",
+    "desc": "This is where I'll have a description for each project"
+  },
+  {
+    "id": 1,
+    "val": "memory",
+    "title": "memory.svg",
+    "desc": "This is where I'll have a description for each project"
+  },
+  {
+    "id": 2,
+    "val": "material",
+    "title": "material.svg",
+    "desc": "This is where I'll have a description for each project"
+  },
+  {
+    "id": 3,
+    "val": "h+c",
+    "title": "cold.svg",
+    "desc": "This is where I'll have a description for each project"
+  },
+  {
+    "id": 4,
+    "val": "dots",
+    "title": "dots.svg",
+    "desc": "This is where I'll have a description for each project"
+  },
+  {
+    "id": 5,
+    "val": "office",
+    "title": "office.svg",
+    "desc": "This is where I'll have a description for each project"
+  },
+  {
+    "id": 6,
+    "val": "ncaa",
+    "title": "ncaa.svg",
+    "desc": "This is where I'll have a description for each project"
+  },
+  {
+    "id": 7,
+    "val": "bike",
+    "title": "bike.svg",
+    "desc": "This is where I'll have a description for each project"
+  }
+]

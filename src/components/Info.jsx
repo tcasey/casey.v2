@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import Title from './Title'
 import NavBar from './NavBar'
 import Social from './Social'
-import portfolioData from './portfolio.json'
+import portfolioData from './pdata.json'
 import Details from './Details'
 
 class Info extends Component {
@@ -19,6 +21,10 @@ class Info extends Component {
       </div>
     )
   }
+}
+
+Info.propTypes = {
+  match: PropTypes.object.isRequired
 }
 
 export default Info

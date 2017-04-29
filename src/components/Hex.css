@@ -22,7 +22,7 @@
   outline: 1px solid transparent;
 }
 .hex-in:hover, .hex-in:hover a {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.03);
   color: #fff;
   cursor: pointer;
 }

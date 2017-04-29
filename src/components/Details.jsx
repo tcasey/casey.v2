@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Div, Span, Strong, Img } from 'glamorous'
+import { Span, Img } from 'glamorous'
+
+import { Paper, Emphasis, Container } from './styles'
 
 class Details extends Component {
   constructor (props) {
@@ -17,26 +19,17 @@ class Details extends Component {
     } = this.props
 
     return (
-      <Div
-        display='flex'
-        justifyContent='center'
-        flexDirection='column'
-        alignItems='center'
-        padding={40}
-      >
-        <Span
-          padding={16}
-        >
+      <Paper>
+        <Emphasis>
+          description:
+        </Emphasis>
+        <Container>
           {data[active].desc}
-        </Span>
-        <Span
-          padding={16}
-        >
-          <Strong
-            textAlign='center'
-          >
-            Tech used:
-          </Strong>
+        </Container>
+        <Container>
+          <Emphasis>
+            tech used:
+          </Emphasis>
           {
             data[active].tech.map((row, idx) => {
               return (
@@ -52,13 +45,36 @@ class Details extends Component {
               )
             })
           }
-        </Span>
-        <Img
-          width='10%'
-          src={`../svg/${data[active].logo}`}
-          alt={data[active].val}
-        />
-      </Div>
+        </Container>
+        <Paper>
+          {
+            data[active].img.map((image, idx) => {
+              return (
+                <Img
+                  padding={16}
+                  key={idx}
+                  width={300}
+                  src={`../projects/${image}`}
+                  alt={`../projects/${image}`}
+                />
+              )
+            })
+          }
+        </Paper>
+        <Emphasis>
+          check it out:
+        </Emphasis>
+        <a
+          href={`${data[active].link}`}
+          target='blank'
+        >
+          <Img
+            width={80}
+            src={`../svg/${data[active].logo}`}
+            alt={data[active].val}
+          />
+        </a>
+      </Paper>
     )
   }
 }

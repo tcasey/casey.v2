@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home'
-import Portfolio from './components/Portfolio'
+import Portfolio from './components/Portfolio.jsx'
 import Skills from './components/Skills'
 import Info from './components/Info'
 

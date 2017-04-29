@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 .nav-container {
-  height: 40px;
+  min-height: 45px;
   background-color: #333333;
   display: flex;
   justify-content: space-between;
@@ -27,8 +27,9 @@ a {
   color: #999999;
 }
 .paper {
-  height: 80vh;
+  min-height: 75vh;
   max-width: 100%;
+  padding: 40px;
   background-color: #fafafa;
   padding-bottom: 5px;
 }
@@ -47,6 +48,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .header h1 {
@@ -167,7 +169,7 @@ a {
   }
 
   .menu-wrapper .menu-nav li {
-    width: 7em;
+    width: 8em;
     z-index: 100;
     display: flex;
     justify-content: center;

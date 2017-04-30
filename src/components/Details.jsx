@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Span, Img } from 'glamorous'
+import LazyLoad from 'react-lazy-load'
 
 import { Paper, Emphasis, Container } from './styles'
 
@@ -12,6 +13,9 @@ class Details extends Component {
       title: this.props.active
     }
   }
+  componentWillMount () {
+  }
+
   render () {
     const {
       data,
@@ -50,13 +54,17 @@ class Details extends Component {
           {
             data[active].img.map((image, idx) => {
               return (
-                <Img
-                  padding={16}
+                <LazyLoad
                   key={idx}
-                  width={300}
-                  src={`../projects/${image}`}
-                  alt={`../projects/${image}`}
-                />
+                >
+                  <Img
+                    padding={16}
+                    key={idx}
+                    width={300}
+                    src={`../projects/${image}`}
+                    alt={`../projects/${image}`}
+                  />
+                </LazyLoad>
               )
             })
           }

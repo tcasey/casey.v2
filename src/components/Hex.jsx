@@ -27,7 +27,7 @@ class Hex extends Component {
             >
             <div className='hex-content'>
               <Img
-                width='80%'
+                width='70%'
                 src={`../svg/${tile.title}`}
                 alt={tile.title}
               />

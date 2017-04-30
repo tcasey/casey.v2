@@ -37,8 +37,7 @@ class Home extends Component {
                   className='employer'
                   target='blank'
                   href='https://www.vivintsolar.com'
-                >
-                 Vivint.solar
+                > Vivint.solar
                 </a>.
               </p>
               <p className='paragraph-link'>Check out my

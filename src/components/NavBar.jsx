@@ -8,18 +8,18 @@ import Menu from './Menu'
 class Navbar extends Component {
   render () {
     return (
-      <nav className='nav-container'>
+      <header className='nav-container'>
         <Menu />
         <NavLink
           to='/'
-          className='nav-link'
+          className='logo-link'
         >
           <Logo />
         </NavLink>
         <Span
           width={70}
         />
-      </nav>
+      </header>
     )
   }
 }

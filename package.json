@@ -3,24 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "d3": "^4.7.4",
-    "glamor": "^2.20.24",
-    "glamorous": "^3.5.0",
-    "react": "^15.5.2",
-    "react-dom": "^15.5.2",
+    "bodymovin": "^4.11.1",
+    "d3": "^3.5.16",
+    "d3-scale": "^1.0.6",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.9.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-faux-dom": "^4.0.3",
     "react-lazy-load": "^3.0.12",
-    "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.2.0",
-    "eslint-config-standard-react": "^4.3.0",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "react-scripts": "0.9.5",
-    "standard": "^10.0.1"
+    "standard": "^10.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

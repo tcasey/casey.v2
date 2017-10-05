@@ -74,6 +74,7 @@ class Details extends Component {
         </Emphasis>
         <a
           href={`${data[active].link}`}
+          className='project-link'
           target='blank'
         >
           <Img

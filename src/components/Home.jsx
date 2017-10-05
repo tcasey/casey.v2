@@ -28,21 +28,21 @@ class Home extends Component {
               </div>
             </div>
             <div className='home-content'>
-              <p>
-                I'm a creative developer with an obession for clean code and an eye for design
-              </p>
+
               <p>
                 Currently I'm working as a Full Stack JavaScript Developer at
-                <a
+              <br />
+                {/* <a
                   className='employer'
                   target='blank'
                   href='https://www.vivintsolar.com'
-                >
-                Vivint.solar
-                </a>.
+                > */}
+                 Vivint.solar
+                {/* </a> */}
               </p>
               <p className='paragraph-link'>Check out my
-                <Link to='/portfolio'> portfolio</Link>
+              <br />
+                <Link to='/portfolio'>portfolio</Link>
               </p>
             </div>
           </div>

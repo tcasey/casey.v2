@@ -4,6 +4,7 @@ import { Main } from './styles'
 import NavBar from './NavBar'
 import Title from './Title'
 import Social from './Social'
+import Chart from './Chart'
 
 class Skills extends Component {
   render () {
@@ -11,7 +12,11 @@ class Skills extends Component {
       <Main>
         <NavBar />
         <Title secondary='skills' />
-        <section className='paper' />
+        <section className='paper'>
+          <div className='skills-container'>
+            <Chart />
+          </div>
+        </section>
         <Social />
       </Main>
     )

@@ -1,0 +1,74 @@
+{
+  "pre_course": {
+    "id": 0,
+    "val": "pre_course",
+    "desc": "this was my attempt at making a better testing platform for bootcamp students 💻",
+    "tech": ["JavaScript", "AngularJS", "Web Workers", "Node", "MongoDB"],
+    "img": ["devm_login.png", "devm_test.png", "devm_assessment.png", "devm_radar.png"],
+    "logo": "pre_course.svg",
+    "link": "http://precourse.herokuapp.com/#/login"
+  },
+  "memory": {
+    "id": 1,
+    "val": "memory",
+    "desc": "a fun little memory game",
+    "tech": ["JavaScript", "SVG"],
+    "img": ["memory_initial.png", "memory_select.png", "memory_selected.png", "memory_finished.png"],
+    "logo": "memory.svg",
+    "link": "https://tcasey.github.io/memory-game/"
+  },
+  "material": {
+    "id": 2,
+    "val": "material",
+    "desc": "a simple todo list (my first react app 🎉)",
+    "tech": ["JavaScript", "React"],
+    "img": ["material_all.png", "material_active.png", "material_completed.png"],
+    "logo": "material.svg",
+    "link": "https://tcasey.github.io/to-do-material/"
+  },
+  "h+c": {
+    "id": 3,
+    "val": "h+c",
+    "desc": "my first app (and most popular if you ask my nephews)",
+    "tech": ["JavaScript", "jQuery"],
+    "img": [ "how_hot_cold.png", "hot_cold.png"],
+    "logo": "cold.svg",
+    "link": "https://tcasey.github.io/HotCold/"
+  },
+  "dots": {
+    "id": 4,
+    "val": "dots",
+    "desc": "just more fun with JavaScript",
+    "tech": ["JavaScript"],
+    "img": ["dots.png"],
+    "logo": "dots.svg",
+    "link": "https://tcasey.github.io/dots/"
+  },
+  "office": {
+    "id": 5,
+    "val": "office",
+    "desc": "personality quiz based off of my favorite TV show 📄",
+    "tech": ["JavaScript", "React"],
+    "img": ["office_start.png", "office_end.png"],
+    "logo": "office.svg",
+    "link": "https://tcasey.github.io/office_quiz/"
+  },
+  "ncaa" : {
+    "id": 6,
+    "val": "ncaa",
+    "desc": "a fun quiz for proving your NCAA football knowledge 🏈",
+    "tech": ["JavaScript"],
+    "img": ["ncaa_landing.png", "ncaa_questions.png", "ncaa_feedback.png", "ncaa_score.png"],
+    "logo": "ncaa.svg",
+    "link": "https://tcasey.github.io/NCAA-Quiz/"
+  },
+  "bike": {
+    "id": 7,
+    "val": "bike",
+    "desc": "got tired of giving people Christmas ideas so I made this instead",
+    "tech": ["JavaScript", "Etsy API"],
+    "img": ["bike_about.png", "bike_general.png", "bike_etsy.png"],
+    "logo": "bike.svg",
+    "link": "https://tcasey.github.io/Etsy-Hack/"
+  }
+}
